@@ -15,7 +15,7 @@ class PersonManagerActive(models.Manager):
 
 
 #a proxy model makes you inhiret from the user model without creating its own table in database
-#and it prevents you from adding or removing fields or beaviors
+#and it prevents you from adding or removing fields or behaviors
 class Person(User):
     inactive=PersonManagerInactive()
     active=PersonManagerActive()
