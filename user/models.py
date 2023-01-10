@@ -2,7 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-
+#we can add additional fields to the User model
+class UserProfile(models.Model):
 
 
 #To comment out multiple lines of code in Python in Windows, you can use the following steps:
