@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 
 #we can add additional fields to the User model
 class UserProfile(models.Model):
+    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    age=models.IntegerField(null=True,blank=True)
+    nickname=models.CharField(max_length=100,null=True,blank=True)
 
 
 #To comment out multiple lines of code in Python in Windows, you can use the following steps:
