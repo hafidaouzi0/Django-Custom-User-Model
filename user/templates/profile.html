@@ -11,7 +11,24 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+ <div class="container pt-5">
+
+<div class="d-flex justify-content-center">
+
+  <form method="post">
+    {% csrf_token %}
+    {{u_form.as_p}}
+    {{p_form.as_p}}
+<button class="btn btn-primary" type="submit">Save</button>
+
+
+  </form>
+
+
+</div>
+
+
+ </div>
 
     
 

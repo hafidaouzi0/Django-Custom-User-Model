@@ -14,6 +14,7 @@ class AccountsUserAdmin(UserAdmin):
         self.inlines=[]
         return super(AccountsUserAdmin,self).add_view(*args,**kwargs)
     def change_view(self,*args,**kwargs ) :
+        self.inlines=[UserProfileInline]
         return super(AccountsUserAdmin,self).change_view(*args,**kwargs)
 
 
